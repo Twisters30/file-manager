@@ -5,13 +5,20 @@
         <button class="content__btn">DFILE STORAGE →</button>
         <div class="content__dropdown-wrapper">
           <div class="content__btn-flex">
-            <button @click="sort = !sort" :class="{'sort-active-btn' : sort}" class="content__btn-sort" type="button">SORT BY NAME</button>
+            <button @click="sort = !sort" :class="{'sort-active-btn' : sort}" class="content__btn-sort" type="button">
+              SORT BY
+              <span v-if="bySize">SIZE</span>
+              <span v-if="byType">TYPE</span>
+              <span v-if="byName">NAME</span>
+              <span v-if="byDate">DATE</span>
+            </button>
             <span @click="sort = !sort" :class="{'sort-active' : sort}" class="content__icon-arrow"></span>
           </div>
           <ul v-if="sort" class="content__dropdown-list">
             <li @click="sortByDate" class="content__dropdown-item">BY DATE</li>
             <li @click="sortBySize" class="content__dropdown-item">BY SIZE</li>
             <li @click="sortByType" class="content__dropdown-item">BY TYPE</li>
+            <li @click="sortByName" class="content__dropdown-item">BY NAME</li>
           </ul>
         </div>
       </div>
@@ -31,11 +38,44 @@ export default {
   data() {
     return {
       sort: false,
+      byDate:false,
+      bySize:false,
+      byType:false,
+      byName:true
     }
   },
   methods:{
+    viewNameSort(){
+      if(this.byDate) {
+        return 'Date'
+      } else if(this.bySize){
+        return 'Size'
+      } else if(this.byType) {
+        return 'Type'
+      }
+    },
+    sortByName(){
+      this.sort = false
+      this.byName = true
+      this.byType = false
+      this.bySize = false
+      this.byDate = false
+      this.folderArray.sort((a,b) => {
+        if(a.name < b.name) {
+          return -1
+        }
+        if(a.name > b.name) {
+          return 1
+        }
+        return this.folderArray
+      })
+    },
     sortByType(){
     this.sort = false
+    this.byName = false
+    this.byType = true
+    this.bySize = false
+    this.byDate = false
     this.folderArray.sort((a,b) => {
       if(a.type < b.type) {
         return -1
@@ -48,6 +88,10 @@ export default {
     },
     sortByDate(){
       this.sort = false
+      this.byName = false
+      this.byType = false
+      this.bySize = false
+      this.byDate = true
       this.folderArray.sort((a,b) => {
         if(a.date < b.date) {
           return 1
@@ -60,6 +104,10 @@ export default {
     },
     sortBySize(){
       this.sort = false
+      this.byName = false
+      this.byType = false
+      this.bySize = true
+      this.byDate = false
       this.folderArray.sort((a,b) => {
         if(a.size < b.size) {
           return 1

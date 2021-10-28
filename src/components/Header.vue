@@ -52,8 +52,13 @@ export default {
   },
   methods:{
     deleteFilesFromArray(){
-      this.folderArray = this.folderArray.filter((e) => !~this.arrayFilesForDell.indexOf(e.id));
-      console.log(this.folderArray)
+      for(let i = 0; i < this.folderArray.length;i++) {
+        for(let k = 0; k < this.arrayFilesForDell.length;k++) {
+          if(this.folderArray[i].id === Number(this.arrayFilesForDell[k])) {
+            this.folderArray.splice(i,1)
+          }
+        }
+      }
     },
     randomInt(min,max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -88,7 +93,7 @@ export default {
         file.type = fileExt.toLowerCase()
         file.date = fileDateCreate
         file.size = fileSize
-        file.id = event.target.files[0].lastModified
+        file.id = +event.target.files[0].lastModified
         this.folderArray.push(file)
         this.passArray()
       }
