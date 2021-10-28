@@ -69,7 +69,7 @@ export default {
       display: block;
       width: 45px;
       height: 15px;
-      background: url("../assets/file-icon/header-file.svg") #FFD600;
+      background: url("~@/assets/file-icon/header-file.svg") #FFD600;
     }
     &::after {
       position: absolute;
@@ -120,7 +120,7 @@ export default {
   position: relative;
   width: 77px;
   height: 96px;
-  background: url("../assets/file-icon/txt-file.svg");
+  background: url("~@/assets/file-icon/txt-file.svg");
   &::before {
     content: 'TXT';
     top: 0;
@@ -131,7 +131,7 @@ export default {
     line-height: 18px;
     letter-spacing: 0.05em;
     color: #fff;
-    background: url("../assets/file-icon/triangle-yellow.svg") no-repeat 100% 0;
+    background: url("~@/assets/file-icon/triangle-yellow.svg") no-repeat 100% 0;
   }
   &::after {
     position: absolute;
@@ -148,7 +148,7 @@ export default {
   position: relative;
   width: 77px;
   height: 96px;
-  background: url("../assets/file-icon/txt-file.svg");
+  background: url("~@/assets/file-icon/txt-file.svg");
   &::before {
     content: 'PPTX';
     top: 0;
@@ -159,9 +159,9 @@ export default {
     line-height: 18px;
     letter-spacing: 0.05em;
     color: #fff;
-    background:url("../assets/file-icon/triangle-yellow.svg") no-repeat 92% -1%,
-  url("../assets/file-icon/pptx-figure.svg") no-repeat 32% 89%,
-  url("../assets/file-icon/pptx-figure.svg") no-repeat 26% 95%
+    background:url("~@/assets/file-icon/triangle-yellow.svg") no-repeat 92% -1%,
+  url("~@/assets/file-icon/pptx-figure.svg") no-repeat 32% 89%,
+  url("~@/assets/file-icon/pptx-figure.svg") no-repeat 26% 95%
   }
   &::after {
     background: none;
@@ -171,7 +171,7 @@ export default {
   position: relative;
   width: 77px;
   height: 96px;
-  background: url("../assets/file-icon/txt-file.svg");
+  background: url("~@/assets/file-icon/txt-file.svg");
   &::before {
     content: 'XLS';
     top: 0;
@@ -182,14 +182,14 @@ export default {
     line-height: 18px;
     letter-spacing: 0.05em;
     color: #fff;
-    background:url("../assets/file-icon/triangle-yellow.svg") no-repeat 85% -1%,
-    url("../assets/file-icon/line-horizontal.svg") no-repeat 10% 66%,
-    url("../assets/file-icon/line-horizontal.svg") no-repeat 10% 75%,
-    url("../assets/file-icon/line-horizontal.svg") no-repeat 10% 84%,
-    url("../assets/file-icon/line-horizontal.svg") no-repeat 10% 94%,
-    url("../assets/file-icon/line-vertical.svg") no-repeat 5% 90%,
-    url("../assets/file-icon/line-vertical.svg") no-repeat 15% 90%,
-    url("../assets/file-icon/line-vertical.svg") no-repeat 56% 90%;
+    background:url("~@/assets/file-icon/triangle-yellow.svg") no-repeat 85% -1%,
+    url("~@/assets/file-icon/line-horizontal.svg") no-repeat 10% 66%,
+    url("~@/assets/file-icon/line-horizontal.svg") no-repeat 10% 75%,
+    url("~@/assets/file-icon/line-horizontal.svg") no-repeat 10% 84%,
+    url("~@/assets/file-icon/line-horizontal.svg") no-repeat 10% 94%,
+    url("~@/assets/file-icon/line-vertical.svg") no-repeat 5% 90%,
+    url("~@/assets/file-icon/line-vertical.svg") no-repeat 15% 90%,
+    url("~@/assets/file-icon/line-vertical.svg") no-repeat 56% 90%;
   }
   &::after {
     background: none;
@@ -199,7 +199,7 @@ export default {
   position: relative;
   width: 77px;
   height: 96px;
-  background: url("../assets/file-icon/txt-file.svg");
+  background: url("~@/assets/file-icon/txt-file.svg");
   &::before {
     content: 'PNG';
     top: 0;
@@ -210,12 +210,12 @@ export default {
     line-height: 18px;
     letter-spacing: 0.05em;
     color: #fff;
-    background:url("../assets/file-icon/triangle-yellow.svg") no-repeat 85% -1%,
-    url("../assets/file-icon/line-horizontal.svg") no-repeat 10% 66%,
-    url("../assets/file-icon/line-horizontal.svg") no-repeat 10% 94%,
-    url("../assets/file-icon/line-vertical.svg") no-repeat 5% 90%,
-    url("../assets/file-icon/line-vertical.svg") no-repeat 58% 90%,
-    url("../assets/file-icon/mounting-png.svg") no-repeat 7% 90%;
+    background:url("~@/assets/file-icon/triangle-yellow.svg") no-repeat 85% -1%,
+    url("~@/assets/file-icon/line-horizontal.svg") no-repeat 10% 66%,
+    url("~@/assets/file-icon/line-horizontal.svg") no-repeat 10% 94%,
+    url("~@/assets/file-icon/line-vertical.svg") no-repeat 5% 90%,
+    url("~@/assets/file-icon/line-vertical.svg") no-repeat 58% 90%,
+    url("~@/assets/file-icon/mounting-png.svg") no-repeat 7% 90%;
   }
   &::after {
     background: none;

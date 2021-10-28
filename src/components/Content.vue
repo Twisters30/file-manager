@@ -161,7 +161,7 @@ export default {
     }
     &__icon-arrow {
       display: block;
-      background: url("../assets/angle-top-bold.svg");
+      background: url("~@/assets/angle-top-bold.svg");
       width: 16px;
       height: 16px;
       transition: 200ms ease-in-out;

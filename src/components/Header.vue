@@ -2,7 +2,7 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <img class="header__logo" src="../assets/logo.svg" alt="logo">
+          <img class="header__logo" src="~@/assets/logo.svg" alt="logo">
           <div class="upload__group-wrapper">
             <div class="upload__wrapper">
               <span class="upload__text">UPLOAD</span>
@@ -33,7 +33,7 @@
                 <input class="form-search__input" type="text" placeholder="Search">
               </label>
             </form>
-            <img class="header__icon" src="../assets/icon-pacman.png" alt="icon">
+            <img class="header__icon" src="~@/assets/icon-pacman.png" alt="icon">
           </div>
         </div>
       </div>
@@ -214,7 +214,7 @@ export default {
       width: 20px;
       height: 21px;
       padding: 5px 18px 6px 20px;
-      background: url("../assets/trash/Basket.svg") no-repeat center;
+      background: url("~@/assets/trash/Basket.svg") no-repeat center;
       &::before {
         position: absolute;
         top: 50%;
@@ -224,7 +224,7 @@ export default {
         content: '';
         width: 7px;
         height: 10px;
-        background: url("../assets/trash/line-basket.svg");
+        background: url("~@/assets/trash/line-basket.svg");
       }
     }
   }
@@ -252,7 +252,7 @@ export default {
       width: 23px;
       height: 18px;
       padding: 7px 17px;
-      background: url("../assets/add-file/folder.svg") no-repeat center;
+      background: url("~@/assets/add-file/folder.svg") no-repeat center;
       cursor: pointer;
       &::before {
         position: absolute;
@@ -261,7 +261,7 @@ export default {
         content: '';
         width: 17px;
         height: 6px;
-        background: url("../assets/add-file/folder-header.svg") no-repeat;
+        background: url("~@/assets/add-file/folder-header.svg") no-repeat;
         transform: translateX(-50%);
       }
     }
@@ -325,7 +325,7 @@ export default {
         width: 22px;
         height: 22px;
         transform: translateY(-50%);
-        background: url("../assets/search.svg") no-repeat;
+        background: url("~@/assets/search.svg") no-repeat;
         cursor: pointer;
       }
     }
