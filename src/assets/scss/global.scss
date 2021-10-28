@@ -1,7 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap');
+:root {
+  --color-black: #232323;
+  --color-gray: #676767;
+}
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Montserrat-Regular,sans-serif;
+  color: var(--color-black);
 }
 button {
   background-color: transparent;
@@ -11,12 +19,26 @@ button {
 ul {
   list-style: none;
 }
-.separator {
+.separator--bottom {
   border-bottom: 1px solid #ACADB5;
   display: block;
+}
+.separator--top {
+  border-top: 1px solid #ACADB5;
+  display: block;
+}
+.separator--vertical-right {
+  display: block;
+  width: 1px;
+  height: 18px;
+  margin: 0 10px;
+  background-color:  #ACADB5;
 }
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.gray--text {
+  color: var(--color-gray);
 }
